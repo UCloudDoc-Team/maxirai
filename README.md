@@ -13,6 +13,5 @@
    - [用户指南](/maxirai/guide/user.md)
    - [管理员指南](/maxirai/guide/admin.md)
    - [外网访问](/maxirai/introduction/access.md)
-- [FAQ](/maxirai/support/faqs.md)
 
 
