@@ -6,7 +6,7 @@
 ## <font style="color:rgb(10, 22, 51);">计费项</font>
 | **计费项** | **<font style="color:rgb(44, 62, 80);">计费方式</font>** | **<font style="color:rgb(44, 62, 80);">计费周期</font>** | **<font style="color:rgb(44, 62, 80);">计费说明</font>** |
 | --- | --- | --- | --- |
-| <font style="color:rgb(10, 22, 51);">实例规格</font> | <font style="color:rgb(10, 22, 51);">预付费</font> | <font style="color:rgb(10, 22, 51);">按月、按年</font> | <font style="color:rgb(10, 22, 51);">MAXIR AI 知识洞察提供标准版、增强版两种规格，用户使用的费用根据所选的规格、使用时长计费。价格详情请参考控制台[MAXIR AI 购买页](https://console.ucloud.cn/maxir/ai/create)。</font> |
+| <font style="color:rgb(10, 22, 51);">实例规格   </font> | <font style="color:rgb(10, 22, 51);">预付费</font> | <font style="color:rgb(10, 22, 51);">按月、按年</font> | <font style="color:rgb(10, 22, 51);">MAXIR AI 知识洞察提供标准版、增强版两种规格，用户使用的费用根据所选的规格、使用时长计费。价格详情请参考控制台[MAXIR AI 购买页](https://console.ucloud.cn/maxir/ai/create)。</font> |
 
 
 ## 续费
@@ -14,8 +14,8 @@
 
 预付费（按月/按年）模式下，我们将<font style="color:rgb(10, 22, 51);">为您默认开启“自动续费开关”，当您的账户余额充足时，系统会在即将到期时，自动为您续费。自动续费时按之前的配置和时长为您自动续费。若您的账户余额不足，系统在资源即将到期时，会扣费失败，您充值后可进行“手动续费”。</font>
 
-> <font style="color:rgb(10, 22, 51);background-color:rgb(237, 255, 242);">如果您的付费周期为月付，为了便于对账，系统首次为您自动续费时，会续费到当前月底，其后的续费按整月进行续费。</font>
->
+> 如果您的付费周期为月付，为了便于对账，系统首次为您自动续费时，会续费到当前月底，其后的续费按整月进行续费。</font>
+
 
 
 
@@ -23,7 +23,7 @@
 
 <font style="color:rgb(10, 22, 51);">您也可以关闭“自动续费开关”，到期后资源自动进入欠费状态，系统会提醒您资源到期和续费事宜，此时系统不会释放用户的资源，您可通过“手动续费”功能来进行续费，用户在续费时可重新选择按月付费或按年付费。如果用户不进行充值并“手动续费”，则扣费失败，资源状态显示为“已过期”。</font>
 
-><font style="color:rgb(10, 22, 51);background-color:rgb(255, 252, 230);">若资源过期后，系统可能会回收相关的过期资源，请及时续费。</font>
+>若资源过期后，系统可能会回收相关的过期资源，请及时续费。</font>
 
 
 
