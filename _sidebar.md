@@ -8,6 +8,6 @@
 - 快速上手
    - [购买实例](/maxirai/fast/purchase.md)
 - 操作指南
-   - [用户指南](/maxirai/guide/buyerinfo.md)
-   - [管理员指南](/maxirai/guide/sellerinfo.md)
+   - [用户指南](/maxirai/guide/user.md)
+   - [管理员指南](/maxirai/guide/admin.md)
 - [FAQ](/maxirai/support/faqs.md)
