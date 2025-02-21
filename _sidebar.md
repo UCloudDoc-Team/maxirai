@@ -10,4 +10,4 @@
 - 操作指南
    - [用户指南](/maxirai/guide/user.md)
    - [管理员指南](/maxirai/guide/admin.md)
-- [FAQ](/maxirai/support/faqs.md)
+   - [外网访问](/maxirai/introduction/access.md)
