@@ -1,3 +1,5 @@
+# 外网访问
+
 知识洞察 MAXIR AI 的外网访问解决方案依托于 UCloud 的负载均衡产品 ALB，ALB 提供高效且安全的外网负载均衡服务，帮助您高效管理和优化外部流量。
 
 1.创建实例：登录 [ALB 控制台](https://console.ucloud.cn/ulb/alb)，点击“创建负载均衡”按钮，创建实例，需要确保“外网弹性IP”勾选状态，相关计费参考 [ALB 产品定价](https://docs.ucloud.cn/ulb/alb/buy/charge)
