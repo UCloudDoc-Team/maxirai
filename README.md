@@ -15,9 +15,10 @@
 - API 文档
    - [概述](/maxirai/API/overview)
    - [身份认证](/maxirai/API/authentication)
+   - [API 接口](/maxirai/API/api-reference)
    - [流式传输](/maxirai/API/streaming)
    - [错误码](/maxirai/API/error-codes)
-   - [API 接口](/maxirai/API/api-reference)
+   
 
 
 
