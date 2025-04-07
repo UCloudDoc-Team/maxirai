@@ -1,12 +1,7 @@
----
-title: "概述"
-description: "MAXIR AI Open API 接口以及功能概述"
-icon: "book"
----
-
+# 概述
 MAXIR AI 提供了一系列功能强大的 API 接口，支持与系统的无缝集成。所有接口均需使用您的 API Key 进行身份验证。
 
-- 如何获取 API Key，请参考 [身份认证](/introduction/authentication)。
+- 如何获取 API Key，请参考 [身份认证](/maxirai/API/authentication)。
 
 - 关于接口的详细使用说明，请查看对应 API 接口详情章节。
 
