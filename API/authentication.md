@@ -1,9 +1,4 @@
----
-title: "身份认证"
-description: "在开始使用 MAXIR AI 前，需要获取 API Key 用于身份认证"
-icon: "key"
----
-
+# 身份认证
 
 MAXIR AI Open API 使用 API Key 进行身份验证。每个 API 请求都必须包含你的 API Key。该 API Key 用于请求认证与使用配额跟踪。
 
