@@ -1,8 +1,4 @@
----
-title: "流式传输"
-description: "了解我们的流式传输功能"
-icon: "grip-lines"
----
+# 流式传输
 
 MAXIR AI Open API 支持将流式响应发送给客户端，从而为特定请求提供部分结果。此功能通过 [服务器推送事件（SSE）](https://html.spec.whatwg.org/multipage/server-sent-events.html#server-sent-events) 标准实现。
 
