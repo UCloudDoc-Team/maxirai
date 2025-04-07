@@ -1,23 +1,3 @@
----
-title: Team Open API Version 2 中文版本
-language_tabs:
-  - shell: Shell
-  - http: HTTP
-  - javascript: JavaScript
-  - ruby: Ruby
-  - python: Python
-  - php: PHP
-  - java: Java
-  - go: Go
-toc_footers: []
-includes: []
-search: true
-code_clipboard: true
-highlight_theme: darkula
-headingLevel: 2
-generator: "@tarslib/widdershins v4.0.28"
-
----
 
 # Team Open API Version 2 中文版本
 
@@ -25,7 +5,7 @@ generator: "@tarslib/widdershins v4.0.28"
 
 域名指向的IP获取方式：
 * 首先在 UCloud 云平台上创建 MAXIR AI 实例，并在详情页获取OpenAPI地址;
-* 外网访问的情况下，客户需通过ALB（应用负载均衡器）获取并绑定外网地址,可参考[相关文档](https://docs.ucloud.cn/maxirai/introduction/access)；
+* 外网访问的情况下，客户需通过ALB（应用负载均衡器）获取并绑定外网地址,可参考[相关文档](/maxirai/introduction/access)；
 * 将自己的业务域名指向该外网地址，以完成配置。
 
 
