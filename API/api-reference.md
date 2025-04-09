@@ -128,9 +128,11 @@ POST /v2/team/sessions
 
 |名称|类型|必选|约束|中文名|说明|
 |---|---|---|---|---|---|
-|» code|integer|true|none||状态码。**0** 表示操作成功。其它值则表示操作失败。如需进行错误排查，请参阅 [错误码](/introduction/error-codes)。|
+|» code|integer|true|none||状态码。**0** 表示操作成功。其它值则表示操作失败。如需进行错误排查，请参阅 [错误码](/maxirai/API/error-codes)。|
 |» data|object|true|none||返回的数据对象。|
-|»» id|string|true|none||会话 ID。<br /><br />如后续要使用该会话来 [执行任务](/api-reference/create-job)，请保存该 ID。|
+|»» id|string|true|none||会话 ID。<br /><br />如后续要使用该会话来 [执行任务](/maxirai/API/api-reference?id=post-create-job)，请保存该 ID。|
+
+/maxirai/API/api-reference?id=post-create-job
 
 ### 返回头部 Header
 
@@ -1809,7 +1811,7 @@ POST /v2/team/jobs
 
 如不指定，则使用默认值 `false`。
 
-关于如何理解流式返回的内容，请参考 [流式返回中的内容说明](/api-reference/streaming#content-description)。
+关于如何理解流式返回的内容，请参考 [流式返回中的内容说明](/maxirai/API/api-reference?id=get-list-sessions)。
 
 **» dataset_id**: 任务关联的数据集 ID。 
 
