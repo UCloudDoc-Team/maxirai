@@ -44,7 +44,7 @@ MAXIR AI Open API 支持将流式响应发送给客户端，从而为特定请�
 - `stage`：响应块所属的阶段。共有两个阶段：`Analyze` 和 `Respond`。
 
 
-### 内容说明
+## 内容说明
 
 每个响应块中 `content` 的值根据块的内容类型不同而有所变化：
 
@@ -94,9 +94,7 @@ MAXIR AI Open API 支持将流式响应发送给客户端，从而为特定请�
 
 让我们来看一个示例。
 
-<Info>
 有关 `POST /v2/jobs` 端点的详细信息，请参阅 [创建任务](/maxirai/API/api-reference/job?id=create-job)。
-</Info>
 
 
 ```python Python request
