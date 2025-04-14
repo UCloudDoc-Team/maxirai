@@ -1,6 +1,6 @@
-# Data source
+# 数据源
 
-## POST Create data source
+## Create data source
 
 POST /v2/team/datasets/{id}/datasources
 
@@ -104,7 +104,7 @@ POST /v2/team/datasets/{id}/datasources
 |---|---|---|---|---|
 |200|x-pd-trace-id|string||MAXIR AI 返回的 Trace ID。当请求发生错误时，可以将此 ID 提供给 MAXIR AI 团队，协助进行故障排查。|
 
-## GET List data sources
+## List data sources
 
 GET /v2/team/datasets/{id}/datasources
 
@@ -209,7 +209,7 @@ GET /v2/team/datasets/{id}/datasources
 |---|---|---|---|---|
 |200|x-pd-trace-id|string||MAXIR AI 返回的 Trace ID。当请求发生错误时，可以将此 ID 提供给 MAXIR AI 团队，协助进行故障排查。|
 
-## DELETE Delete data source
+## Delete data source
 
 DELETE /v2/team/datasets/{dataset_id}/datasources/{datasource_id}
 
@@ -277,7 +277,7 @@ DELETE /v2/team/datasets/{dataset_id}/datasources/{datasource_id}
 |---|---|---|---|---|
 |200|x-pd-trace-id|string||MAXIR AI 返回的 Trace ID。当请求发生错误时，可以将此 ID 提供给 MAXIR AI 团队，协助进行故障排查。|
 
-## GET Get data source
+## Get data source
 
 GET /v2/team/datasets/{dataset_id}/datasources/{datasource_id}
 
@@ -352,7 +352,7 @@ GET /v2/team/datasets/{dataset_id}/datasources/{datasource_id}
 |---|---|---|---|---|
 |200|x-pd-trace-id|string||MAXIR AI 返回的 Trace ID。当请求发生错误时，可以将此 ID 提供给 MAXIR AI 团队，协助进行故障排查。|
 
-## POST Create data source without specifying a dataset
+## Create data source without specifying a dataset
 
 POST /v2/team/datasources
 
@@ -428,7 +428,7 @@ POST /v2/team/datasources
 |---|---|---|---|---|
 |200|x-pd-trace-id|string||MAXIR AI 返回的 Trace ID。当请求发生错误时，可以将此 ID 提供给 MAXIR AI 团队，协助进行故障排查。|
 
-## POST Presign data source 
+## Presign data source 
 
 POST /v2/team/datasets/{dataset_id}/datasources/{datasource_id}/presign
 
