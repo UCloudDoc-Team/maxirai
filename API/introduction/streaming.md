@@ -1,8 +1,4 @@
----
-title: "流式传输"
-description: "了解我们的流式传输功能"
-icon: "grip-lines"
----
+# 流式传输
 
 MAXIR AI Open API 支持将流式响应发送给客户端，从而为特定请求提供部分结果。此功能通过 [服务器推送事件（SSE）](https://html.spec.whatwg.org/multipage/server-sent-events.html#server-sent-events) 标准实现。
 
@@ -99,7 +95,7 @@ MAXIR AI Open API 支持将流式响应发送给客户端，从而为特定请�
 让我们来看一个示例。
 
 <Info>
-有关 `POST /v2/jobs` 端点的详细信息，请参阅 [创建任务](create-job)。
+有关 `POST /v2/jobs` 端点的详细信息，请参阅 [创建任务](/maxirai/API/api-reference/job?id=create-job)。
 </Info>
 
 
@@ -133,10 +129,7 @@ response = requests.request("POST", url, headers=headers, data=payload)
 print(response.text)
 ```
 
-
-The response is simlilar to this:
-
-<Accordion title="流式响应">
+响应示例如下【流式响应】:
 
 ```
 event:JOB_ID
@@ -354,11 +347,10 @@ print(response.text)
 ```
 
 
-如下为响应示例：
-
-<Accordion title="非流式响应">
-```json Example response
+响应示例如下【非流式响应】：
+```json   
 {"code":0,"msg":null,"data":{"job_id":"job-cm738zrbt00bv01l13uy02cdk","blocks":[{"type":"CODE","content":"```python\n\nimport pandas as pd\n\ndef invoke(input_0: pd.DataFrame) -> pd.DataFrame:\n    # Group by the combination of departure and arrival cities and count occurrences\n    city_combinations = input_0.groupby(['出发城市(城市三字码)', '到达城市(城市三字码)']).size().reset_index(name='组合出现次数')\n    \n    # Sort the combinations by the count in descending order to find the most common ones\n    city_combinations_sorted = city_combinations.sort_values(by='组合出现次数', ascending=False).reset_index(drop=True)\n    \n    # Assign the result to the output variable\n    output = city_combinations_sorted\n    \n    return output\n\n```","group_id":"327b3b90-c947-4efb-be74-845b6edf29e2","group_name":"分析数据中出发城市(城市三字码)和到达城市(城市三字码)的组合，统计每一对组合出现的次数，以找出最常见的组合。","stage":"Analyze"},{"type":"TABLE","content":{"url":"https://static.xxx.ai/tmp_datasource_cache/code_result/tmm-cm5ao3yoe00zm01l1u1e7p3pj/e8a4d119-edc1-4877-a8e4-379ca9a99dc6.csv","name":"city_combination_data.csv","expired_at":"2025-02-13T11:30:15.453397Z"},"group_id":"327b3b90-c947-4efb-be74-845b6edf29e2","group_name":"分析数据中出发城市(城市三字码)和到达城市(城市三字码)的组合，统计每一对组合出现的次数，以找出最常见的组合。","stage":"Analyze"},{"type":"CODE","content":"```python\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport io\n\ndef invoke(city_combination_data: pd.DataFrame) -> io.BytesIO:\n    # Sort the data by '组合出现次数' in descending order and take the top 100\n    top_combinations = city_combination_data.sort_values(by='组合出现次数', ascending=False).head(100)\n    \n    # Create a new column for the city combination\n    top_combinations['城市组合'] = top_combinations['出发城市(城市三字码)'] + '-' + top_combinations['到达城市(城市三字码)']\n    \n    # Plotting\n    fig, ax = plt.subplots(figsize=(12, 8))\n    ax.bar(top_combinations['城市组合'], top_combinations['组合出现次数'])\n    \n    # Set labels and title\n    ax.set_xlabel('城市组合')\n    ax.set_ylabel('组合出现次数')\n    ax.set_title('最常见的城市组合出现频率')\n    \n    # Rotate x-axis labels for better readability\n    plt.xticks(rotation=90)\n    \n    # Use tight layout for better spacing\n    plt.tight_layout()\n    \n    # Save the plot to a BytesIO object\n    output = io.BytesIO()\n    plt.savefig(output, format='png')\n    plt.close(fig)\n    \n    # Seek to the beginning of the BytesIO object\n    output.seek(0)\n    \n    return output\n\n```","group_id":"f443de5b-1960-42be-bef8-3c4d4c5c011e","group_name":"对出发城市和到达城市的组合出现频率进行可视化，使用柱状图展示最常见的城市组合。","stage":"Analyze"},{"type":"IMAGE","content":{"url":"https://static.xxx.ai/tmp_datasource_cache/code_result/tmm-cm5ao3yoe00zm01l1u1e7p3pj/30c8fa22-d666-4e82-8682-352b8dc1982d.png","name":"visualization.png","expired_at":"2025-02-13T11:30:15.453397Z"},"group_id":"f443de5b-1960-42be-bef8-3c4d4c5c011e","group_name":"对出发城市和到达城市的组合出现频率进行可视化，使用柱状图展示最常见的城市组合。","stage":"Analyze"},{"type":"MESSAGE","content":"\n\n`Analyzing Conclusions` \n\n### 最常见的城市组合\n\n#### 数据分析\n\n","group_id":"2ddd5382-f302-4f33-917e-124d9c925eab","group_name":"结论","stage":"Respond"},{"type":"TABLE","content":{"url":"https://static.xxx.ai/tmp_datasource_cache/code_result/tmm-cm5ao3yoe00zm01l1u1e7p3pj/e8a4d119-edc1-4877-a8e4-379ca9a99dc6.csv","name":"city_combination_data.csv","expired_at":"2025-02-13T11:30:15.453397Z"},"group_id":"2ddd5382-f302-4f33-917e-124d9c925eab","group_name":"结论","stage":"Respond"},{"type":"MESSAGE","content":"\n\n- **最常见的组合**: 出发城市为BKK，到达城市为HKT，出现次数为116次。\n- **其他高频组合**: HKT到BKK出现99次，TYO到SPK出现86次，CNX到BKK出现76次，BKK到CNX出现73次。\n\n#### 可视化分析\n\n","group_id":"2ddd5382-f302-4f33-917e-124d9c925eab","group_name":"结论","stage":"Respond"},{"type":"IMAGE","content":{"url":"https://static.xxx.ai/tmp_datasource_cache/code_result/tmm-cm5ao3yoe00zm01l1u1e7p3pj/30c8fa22-d666-4e82-8682-352b8dc1982d.png","name":"visualization.png","expired_at":"2025-02-13T11:30:15.453397Z"},"group_id":"2ddd5382-f302-4f33-917e-124d9c925eab","group_name":"结论","stage":"Respond"},{"type":"MESSAGE","content":"\n\n- **柱状图展示**: 图中显示了各城市组合的出现频率，BKK到HKT的组合明显高于其他组合。\n\n#### 结论与见解\n- **最常见的城市组合**: BKK到HKT是最常见的城市组合。\n- **高频航线**: 这些高频组合可能反映了热门航线或旅游目的地的趋势。","group_id":"2ddd5382-f302-4f33-917e-124d9c925eab","group_name":"结论","stage":"Respond"},{"type":"SOURCES","content":[{"source":"junlan.csv","datasource_id":"ds-cm5clulg2000101fcumw33r4k","dataset_id":"dset-cm5clulda02s401l133osoja3","file_type":"csv","external_id":"4444"}],"group_id":"","group_name":"","stage":"Respond"},{"type":"QUESTIONS","content":["分析出发城市和到达城市组合的变化趋势，是否在不同日期有显著差异。","探讨出发城市和到达城市组合与航空公司名称之间的关系，是否某些航空公司更倾向于特定的城市组合。","研究出发城市和到达城市组合与出票数量和行李数量之间的相关性，是否某些组合会导致更高的出票或行李数量。"],"group_id":"-1","group_name":null,"stage":"Respond"}]}}
+
 ```
 </Accordion>
 
