@@ -1,4 +1,4 @@
-# File
+# 本地文件
 
 ## Upload local file
 
@@ -6,15 +6,9 @@ POST /v2/team/file/upload-datasource
 
 上传本地文件。支持的文件格式包括：**.csv**、**.tsv**、**.md**、**.mdx**、**.json**、**.txt**、**.pdf**、**.pptx**、**.ppt**、**.doc**、**.docx**、**.xls** 或 **.xlsx**。
 
-您可以使用此接口上传本地文件，然后使用获得的 `file_object_key` 来创建数据源。详细操作指南，请参考 [如何上传本地文件](/developer-guides/upload-file)。
+您可以使用此接口上传本地文件，然后使用获得的 `file_object_key` 来创建数据源。
 
-> Body 请求参数
 
-```yaml
-file: ""
-user_id: ""
-
-```
 
 ### 请求参数
 
@@ -24,17 +18,15 @@ user_id: ""
 |body|body|object| 否 ||none|
 |» file|body|string(binary)| 是 ||要上传的文件。该字段必填，且应当包含文件数据。例如，`--form 'file=@"/Users/jiaoqi/Downloads/0f9a7ebd-7a2a-454a-8cd9-96accffa3107.csv"'`。|
 |» user_id|body|string| 是 ||用户 ID，即您在组织中的唯一身份标识。|
+> Body 请求参数
 
-> 返回示例
+```yaml
+file: ""
+user_id: ""
 
-```json
-{
-  "code": 0,
-  "data": {
-    "file_object_key": "/tmp/sdgsagdsgsadgasdg.csv"
-  }
-}
 ```
+
+
 
 ### 返回结果
 
@@ -51,6 +43,17 @@ user_id: ""
 |» code|integer|true|none||状态码。**0** 表示操作成功。其它值则表示操作失败。如需进行错误排查，请参阅 [错误码](/maxirai/API/introduction/error-codes)。|
 |» data|object|true|none||返回的数据对象。|
 |»» file_object_key|string|true|none||文件的对象存储路径。|
+
+> 返回示例
+
+```json
+{
+  "code": 0,
+  "data": {
+    "file_object_key": "/tmp/sdgsagdsgsadgasdg.csv"
+  }
+}
+```
 
 ### 返回头部 Header
 
