@@ -8,6 +8,13 @@ POST /v2/team/file/upload-datasource
 
 您可以使用此接口上传本地文件，然后使用获得的 `file_object_key` 来创建数据源。
 
+> Body 请求参数
+
+```yaml
+file: ""
+user_id: ""
+
+```
 
 
 ### 请求参数
@@ -18,15 +25,17 @@ POST /v2/team/file/upload-datasource
 |body|body|object| 否 ||none|
 |» file|body|string(binary)| 是 ||要上传的文件。该字段必填，且应当包含文件数据。例如，`--form 'file=@"/Users/jiaoqi/Downloads/0f9a7ebd-7a2a-454a-8cd9-96accffa3107.csv"'`。|
 |» user_id|body|string| 是 ||用户 ID，即您在组织中的唯一身份标识。|
-> Body 请求参数
 
-```yaml
-file: ""
-user_id: ""
+> 返回示例
 
+```json
+{
+  "code": 0,
+  "data": {
+    "file_object_key": "/tmp/sdgsagdsgsadgasdg.csv"
+  }
+}
 ```
-
-
 
 ### 返回结果
 
@@ -44,16 +53,7 @@ user_id: ""
 |» data|object|true|none||返回的数据对象。|
 |»» file_object_key|string|true|none||文件的对象存储路径。|
 
-> 返回示例
 
-```json
-{
-  "code": 0,
-  "data": {
-    "file_object_key": "/tmp/sdgsagdsgsadgasdg.csv"
-  }
-}
-```
 
 ### 返回头部 Header
 
