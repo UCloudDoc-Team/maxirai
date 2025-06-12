@@ -187,7 +187,7 @@ GET /v2/team/datasets/{id}/datasources
 |»» total_items|integer|true|none||返回的数据源总数量。|
 |»» page_size|integer|true|none||每页返回的数据源数量。|
 |»» page_number|integer|true|none||当前页面的页码。|
-|»» records|[object]|true|none||当前页面返回的数据源列表。|
+|»» records|object|true|none||当前页面返回的数据源列表。|
 |»»» id|string|true|none||数据源 ID，即该数据源在数据集中的唯一标识。|
 |»»» dataset_id|string|true|none||数据源所在的数据集 ID。|
 |»»» name|string|true|none||数据源名称。|
@@ -376,7 +376,7 @@ POST /v2/team/datasources
 |名称|位置|类型|必选|中文名|说明|
 |---|---|---|---|---|---|
 |x-pd-external-trace-id|header|string| 否 ||您本地系统中设置的 Trace ID，至多支持 128 个字符。当请求发生错误时，可以将此 ID 提供给 MAXIR AI 团队，协助进行故障排查。|
-|body|body|[DataSourceConfig](/maxirai/API/api-reference/data-model?id=datasourceconfig)| 否 ||none|
+|body|body|object| 否 ||none|
 
 > 返回示例
 
