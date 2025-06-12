@@ -59,7 +59,7 @@ GET /v2/team/datasets/{id}/overview
 
 |名称|类型|必选|约束|中文名|说明|
 |---|---|---|---|---|---|
-|» code|[返回模型](#schema返回模型)|true|none||none|
+|» code|object|true|none||none|
 |»» code|integer|true|none||状态码。**0** 表示操作成功。其它值则表示操作失败。如需进行错误排查，请参阅 [错误码](/maxirai/API/introduction/error-codes)。|
 |» data|object|true|none||数据集对象。|
 |»» id|string|true|none||数据集 ID，即数据集在项目中的唯一标识。|
@@ -193,7 +193,7 @@ GET /v2/team/datasets
 |»» page_number|integer|true|none||当前页面的页码。|
 |»» page_size|integer|true|none||每页返回的数据集数量。|
 |»» total_items|integer|true|none||返回的数据集总数量。|
-|»» records|[[DatasetDTO](/maxirai/API/api-reference/data-model?id=datasetdto)]|true|none||当前页面返回的数据集列表。|
+|»» records|object|true|none||当前页面返回的数据集列表。|
 |»»» id|string|true|none||数据集 ID，即该数据集在项目中的唯一标识。|
 |»»» name|string|true|none||数据集名称。|
 |»»» description|string|true|none||数据集描述。|
