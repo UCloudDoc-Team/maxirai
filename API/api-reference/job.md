@@ -35,7 +35,7 @@ POST /v2/team/jobs
 |» stream|body|boolean| 否 ||是否使用流式返回。如果设置为 `true`，MAXIR AI 将实时向客户端发送回答更新，持续传输实时可用的数据。如果设置为 `false`，则在整个回答完成后，一次性返回完整的响应。|
 |» question|body|string| 是 ||您的问题（即提示词）。|
 |» dataset_id|body|string| 否 ||任务关联的数据集 ID。 |
-|» datasource_ids|body|[string]| 否 ||指定在任务中使用的数据源的 ID。最多可以指定 1,000 个数据源。|
+|» datasource_ids|body|string| 否 ||指定在任务中使用的数据源的 ID。最多可以指定 1,000 个数据源。|
 |» output_language|body|string| 否 ||MAXIR AI 的回复语言。例如，当设置为 `ZH-CN` 时，则 MAXIR AI 以简体中文回复。可选值包括：|
 |» job_mode|body|string| 否 ||任务类型。可选值包括：|
 |» user_id|body|string| 是 ||用户 ID，即您在组织中的唯一身份标识。|
@@ -257,7 +257,7 @@ POST /v2/team/jobs
 |» code|integer|true|none||状态码。**0** 表示操作成功。其它值则表示操作失败。如需进行错误排查，请参阅 [错误码](/maxirai/API/introduction/error-codes)。|
 |» data|object|true|none||任务对象。|
 |»» job_id|string|true|none||任务 ID，即会话中该任务的唯一标识。|
-|»» blocks|[[BlockDTO](/maxirai/API/api-reference/data-model?id=#blockdto)]|true|none||构成完整答案的答案块列表。|
+|»» blocks|object|true|none||构成完整答案的答案块列表。|
 |»»» type|string|true|none||答案块（Block）的内容类型。可能值为：<br /><br />- `MESSAGE`：表示内容是文本。<br />- `CODE`：表示内容是代码片段。<br />- `TABLE`：表示内容是表格。<br />- `IMAGE`：表示内容是图片。<br />- `SOURCE`：表示内容是答案块的参考来源。<br />- `QUESTIONS`：即 MAXIR AI 生成的建议问题，帮助引导您后续的数据探索和分析。|
 |»»» content|string|true|none||答案块的内容，随 `type` 值而异：<br /><br />- 当 `type` 为 `MESSAGE` 时，内容为一段文本。<br />- 当 `type` 为 `CODE` 时，内容为 Markdown 格式表示的代码片段。<br />- 当 `type` 为 `TABLE` 时，内容为表格，包含如下构成参数：<br />    - `name`：`.csv` 文件的名称。<br />    - `url`：文件的 S3 Key 或 URL。<br />    - `expires_at`：`url` 的过期时间。如需保存表格方便后续使用，请确保在 URL 过期之前完成下载。<br />- 当 `type` 为 `IMAGE` 时，内容为一张图片，包含如下构成参数：<br />    - `name`：图片的名称。<br />    - `url`：图片的 S3 Key 或 URL。<br />    - `expires_at`：`url` 的过期时间。如需保存图片方便后续使用，请确保在 URL 过期之前完成下载。<br />- 当 `type` 为 `SOURCE` 时，内容为答案块的参考来源，包含如下构成参数：<br />    - `source`：数据源的文件名。<br />    - `datasource_id`：数据源 ID。<br />    - `dataset_id`：数据集 ID。<br />    - `file_type`：数据源的文件扩展名。<br />- 当 `type` 为 `QUESTIONS` 时，内容为 MAXIR AI 生成的建议问题，帮助您引导后续的数据探索与分析。|
 |»»» group_id|string|true|none||答案块所在的分组 ID。|
