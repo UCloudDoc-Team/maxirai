@@ -751,13 +751,13 @@ GET /v2/team/sessions/{id}/history
 |»» total_items|integer|true|none||返回的任务记录总数量。|
 |»» page_number|integer|true|none||当前页面的页码。|
 |»» page_size|integer|true|none||每页返回的记录数量。|
-|»» records|[object]|true|none||当前页面返回的任务记录列表。|
+|»» records|object|true|none||当前页面返回的任务记录列表。|
 |»»» question|object|true|none||您的提问（即提示词）。|
-|»»»» blocks|[object]|true|none||构成整个问题的内容块列表。|
+|»»»» blocks|object|true|none||构成整个问题的内容块列表。|
 |»»»»» type|string|true|none||The content type of the question block. Possible values are:<br />- `MESSAGE`: The content is a piece of text.<br />- `CODE`: The content a code snippet in Markdown format.|
 |»»»»» content|string|true|none||The block content. It is a piece of text when the `type` is `MESSAGE`, and a code snippet when the `type` is `CODE`.|
 |»»» answer|object|true|none||MAXIR AI 的回答。|
-|»»»» blocks|[[BlockDTO](/maxirai/API/api-reference/data-model?id=blockdto)]|true|none||MAXIR AI 的答案。|
+|»»»» blocks|object|true|none||MAXIR AI 的答案。|
 |»»»»» type|string|true|none||答案块（Block）的内容类型。可能值为：<br /><br />- `MESSAGE`：表示内容是文本。<br />- `CODE`：表示内容是代码片段。<br />- `TABLE`：表示内容是表格。<br />- `IMAGE`：表示内容是图片。<br />- `SOURCE`：表示内容是答案块的参考来源。<br />- `QUESTIONS`：即 MAXIR AI 生成的建议问题，帮助引导您后续的数据探索和分析。|
 |»»»»» content|string|true|none||答案块的内容，随 `type` 值而异：<br /><br />- 当 `type` 为 `MESSAGE` 时，内容为一段文本。<br />- 当 `type` 为 `CODE` 时，内容为 Markdown 格式表示的代码片段。<br />- 当 `type` 为 `TABLE` 时，内容为表格，包含如下构成参数：<br />    - `name`：`.csv` 文件的名称。<br />    - `url`：文件的 S3 Key 或 URL。<br />    - `expires_at`：`url` 的过期时间。如需保存表格方便后续使用，请确保在 URL 过期之前完成下载。<br />- 当 `type` 为 `IMAGE` 时，内容为一张图片，包含如下构成参数：<br />    - `name`：图片的名称。<br />    - `url`：图片的 S3 Key 或 URL。<br />    - `expires_at`：`url` 的过期时间。如需保存图片方便后续使用，请确保在 URL 过期之前完成下载。<br />- 当 `type` 为 `SOURCE` 时，内容为答案块的参考来源，包含如下构成参数：<br />    - `source`：数据源的文件名。<br />    - `datasource_id`：数据源 ID。<br />    - `dataset_id`：数据集 ID。<br />    - `file_type`：数据源的文件扩展名。<br />- 当 `type` 为 `QUESTIONS` 时，内容为 MAXIR AI 生成的建议问题，帮助您引导后续的数据探索与分析。|
 |»»»»» group_id|string|true|none||答案块所在的分组 ID。|
