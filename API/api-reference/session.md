@@ -240,7 +240,7 @@ GET /v2/team/sessions
 |»» total_items|integer|true|none||返回的会话总数量。|
 |»» page_number|integer|true|none||当前页面的页码。|
 |»» page_size|integer|true|none||每页返回的会话数量。|
-|»» records|[object]|true|none||当前页面返回的会话列表。|
+|»» records|object|true|none||当前页面返回的会话列表。|
 |»»» id|string|true|none||会话 ID，会话在当前项目中的唯一标识。|
 |»»» name|string|true|none||会话名称。如名称长度超过 128 个字符，将仅返回前 128 个字符。|
 |»»» output_language|string|false|none||MAXIR AI 的返回语言。可能值包括：<br /><br />- `AUTO`：根据提示词自动识别<br />- `EN`：英语<br />- `ES`：西班牙语<br />- `AR`：阿拉伯语<br />- `PT`：葡萄牙语<br />- `ID`：印尼语<br />- `JA`：日语<br />- `RU`：俄语<br />- `HI`：印地语<br />- `FR`：法语<br />- `DE`：德语<br />- `VI`：越南语<br />- `TR`：土耳其语<br />- `PL`：波兰语<br />- `IT`：意大利语<br />- `KO`：韩语<br />- `ZH-CN`：简体中文<br />- `ZH-TW`：繁体中文|
