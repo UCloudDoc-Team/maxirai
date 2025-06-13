@@ -66,8 +66,8 @@ GET /v2/team/datasets/{id}/overview
 |»» name|string|true|none||数据集名称。|
 |»» description|string|true|none||数据集描述。|
 |»» summary|string|true|none||数据集中数据源的概述。|
-|»» exploration_questions|[string]|true|none||MAXIR AI 预生成的问题，可以帮助更好地探索数据集中的数据。|
-|»» keywords|[string]|true|none||数据集关键词，可以帮助更好地理解数据集内容。|
+|»» exploration_questions|string|true|none||MAXIR AI 预生成的问题，可以帮助更好地探索数据集中的数据。|
+|»» keywords|string|true|none||数据集关键词，可以帮助更好地理解数据集内容。|
 
 ## Create dataset
 
