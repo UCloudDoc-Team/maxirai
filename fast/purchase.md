@@ -4,7 +4,7 @@
 1.登录控制台，进入[知识库购买页](https://console.ucloud.cn/maxir/ai/create) ，选择所需规格和其他设置，点击“立即购买”。
 
 <br>
-<img src="/images/1740136704893-0.png" width="800" >
+<img src="/images/1740136704893-0.png" width="1000" >
 <br>
 
 ![](/images/1740136704893-0.png)
