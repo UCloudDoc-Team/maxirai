@@ -429,7 +429,7 @@ DELETE /v2/team/sessions/{id}
 
 **id**: 要删除的会话 ID。
 
-如需查看项目中存在的会话，请调用 [GET /v2/team/sessions](/api-reference/list-sessions) 接口。
+如需查看项目中存在的会话，请调用 [GET /v2/team/sessions](/maxirai/API/api-reference/session?id=list-sessions) 接口。
 
 > 返回示例
 
@@ -481,7 +481,7 @@ GET /v2/team/sessions/{id}
 
 **id**: 目标会话的 ID。
 
-如需查看项目中存在的会话，请调用 [GET /v2/team/sessions](/api-reference/list-sessions) 接口。
+如需查看项目中存在的会话，请调用 [GET /v2/team/sessions](/maxirai/API/api-reference/session?id=list-sessions) 接口。
 
 > 返回示例
 
