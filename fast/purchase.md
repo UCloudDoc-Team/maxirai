@@ -10,26 +10,6 @@
 ![](/images/1740136704893-1.png)
 
 
-## 管理用户
-1.获取管理地址
-
-点击列表“详情”按钮，打开抽屉，获取管理地址。默认提供内网地址，如需外网访问，可参考 [外网访问](/maxirai/introduction/access.md) 。
-
-![](/images/1740136704893-3.png)
-
-2.登录管理员账号
-
-用户名默认 Administrator，密码：创建实例时设置的密码，如果遗忘可返回控制台重置密码。
-
-![](/images/1740136704893-4.png)
-
-3. 管理用户：创建/批量导入用户，并分配对应权限和席位。详情可参考文档 [管理员指南](admin-guide/1-overview.md) 。
-
-> 说明：如果管理员需要使用问答功能，需要将管理员对应的“是否分配席位”配置，改为“是”。
->
-
-![](/images/1740136704893-5.png)
-
 
 
 ## 创建用户
@@ -50,7 +30,7 @@
 
     ![](maxirai/images/create-account.jpg)
 
-    更多信息，请参考[创建账号](/maxirai/admin-guide/account-mgmt.md#创建账号)。
+    更多信息，请参考[创建账号](/maxirai/admin-guide/4-account-mgmt.md#创建账号)。
 
 ## 开始问答
 
@@ -68,9 +48,9 @@
 
     ![](maxirai/images/create-agent.jpg)
 
-    更多信息，请参考[创建 Agent](/maxirai/user-guide/agent-mgmt.md#创建-agent)。
+    更多信息，请参考[创建 Agent](/maxirai/user-guide/10-agent-mgmt.md#创建-agent)。
 
-    > 如需创建带知识库/数据集的 Agent, 请参考[快速入门](/maxirai/user-guide/quick-start.md)完成 Agent 创建。
+    > 如需创建带知识库/数据集的 Agent, 请参考[快速入门](/maxirai/user-guide/3-quick-start.md)完成 Agent 创建。
 
 4. 开始问答。
 
