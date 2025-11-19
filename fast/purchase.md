@@ -3,11 +3,11 @@
 ## 创建实例
 1.登录控制台，进入[知识库购买页](https://console.ucloud.cn/maxir-ai/ai/create) ，选择所需规格和其他设置，点击“立即购买”。
 
-![](/images/1740136704893-0.png)
+![](/images/create-maxirai.png)
 
 2.支付订单：点击“支付订单”，支付成功后，跳转至控制台列表页， 等待实例创建成功。
 
-![](/images/1740136704893-1.png)
+![](/images/order-confirm.png)
 
 
 
@@ -38,7 +38,7 @@
 
     点击列表“详情”按钮，打开抽屉，获取问答入口地址。默认提供内网地址，如需外网访问，可参考[外网访问](/maxirai/introduction/access)。
 
-    ![](辛苦补充图片)
+    ![](/images/maxirai-detail.png)
 
 2. 使用[上一步](#创建用户)中创建的用户账号登录问答系统。
 
