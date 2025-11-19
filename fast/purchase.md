@@ -1,7 +1,7 @@
 # 创建实例
 
 ## 创建实例
-1.登录控制台，进入[知识库购买页](https://console.ucloud.cn/maxir/ai/create) ，选择所需规格和其他设置，点击“立即购买”。
+1.登录控制台，进入[知识库购买页](https://console.ucloud.cn/maxir-ai/ai/create) ，选择所需规格和其他设置，点击“立即购买”。
 
 ![](/images/1740136704893-0.png)
 

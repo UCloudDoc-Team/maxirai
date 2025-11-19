@@ -6,7 +6,7 @@
 ## <font style="color:rgb(10, 22, 51);">计费项</font>
 | **计费项** | **<font style="color:rgb(44, 62, 80);">计费方式</font>** | **<font style="color:rgb(44, 62, 80);">计费周期</font>** | **<font style="color:rgb(44, 62, 80);">计费说明</font>** |
 | --- | --- | --- | --- |
-| <font style="color:rgb(10, 22, 51);">实例规格   </font> | <font style="color:rgb(10, 22, 51);">预付费</font> | <font style="color:rgb(10, 22, 51);">按月、按年</font> | <font style="color:rgb(10, 22, 51);">MAXIR AI 知识洞察提供标准版、增强版两种规格，用户使用的费用根据所选的规格、使用时长计费。价格详情请参考控制台[MAXIR AI 购买页](https://console.ucloud.cn/maxir/ai/create)。</font> |
+| <font style="color:rgb(10, 22, 51);">实例规格   </font> | <font style="color:rgb(10, 22, 51);">预付费</font> | <font style="color:rgb(10, 22, 51);">按月、按年</font> | <font style="color:rgb(10, 22, 51);">MAXIR AI 知识洞察提供标准版、增强版两种规格，用户使用的费用根据所选的规格、使用时长计费。价格详情请参考控制台[MAXIR AI 购买页](https://console.ucloud.cn/maxir-ai/ai/create)。</font> |
 
 
 ## 续费

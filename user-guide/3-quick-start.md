@@ -13,9 +13,9 @@
 
 ## 步骤 2. 创建数据源
 
-- 如创建的 Agent 需使用知识库和文件数据集，请参考[上传文件](/user-guide/7-data-source-mgmt.md#上传文件)章节，完成文件上传。
+- 如创建的 Agent 需使用知识库和文件数据集，请参考[上传文件](/maxirai/user-guide/7-data-source-mgmt.md#上传文件)章节，完成文件上传。
     
-- 如创建的 Agent 需访问数据库数据，请参考[创建数据库数据源](/user-guide/7-data-source-mgmt.md#创建数据库数据源)章节，完成数据库连接。
+- 如创建的 Agent 需访问数据库数据，请参考[创建数据库数据源](/maxirai/user-guide/7-data-source-mgmt.md#创建数据库数据源)章节，完成数据库连接。
     
 - 如创建的 Agent 无需对接任何数据，请直接跳至[步骤 4](#步骤-4-创建-agent)。
     
@@ -24,11 +24,11 @@
 
 请根据文件或数据源类型，选择创建：
 
-- 知识库：数据源为 **pdf、docx、doc、txt、md、json、pptx**。详细操作，请参考[创建知识库](/user-guide/8-kb-mgmt.md#创建知识库)章节。
+- 知识库：数据源为 **pdf、docx、doc、txt、md、json、pptx**。详细操作，请参考[创建知识库](/maxirai/user-guide/8-kb-mgmt.md#创建知识库)章节。
     
-- 文件数据集：数据源为 **excel** 或 **csv**。详细操作，请参考[创建文件数据集](/user-guide/9-dataset-mgmt.md#创建文件数据集)章节。
+- 文件数据集：数据源为 **excel** 或 **csv**。详细操作，请参考[创建文件数据集](/maxirai/user-guide/9-dataset-mgmt.md#创建文件数据集)章节。
     
-- 数据库数据集：数据源为数据库。详细操作，请参考[创建数据库数据集](/user-guide/9-dataset-mgmt.md#创建数据库数据集)章节。
+- 数据库数据集：数据源为数据库。详细操作，请参考[创建数据库数据集](/maxirai/user-guide/9-dataset-mgmt.md#创建数据库数据集)章节。
     
 
 ## 步骤 4. 创建 Agent
@@ -39,7 +39,7 @@
     
 2. 在“聊天配置”页面，完成相关配置。
 
-    关于配置的详细说明，请参考[创建 Agent](/user-guide/10-agent-mgmt.md#创建-agent)章节。
+    关于配置的详细说明，请参考[创建 Agent](/maxirai/user-guide/10-agent-mgmt.md#创建-agent)章节。
     
 3. 点击“确定”完成 Agent 创建。
     
