@@ -32,36 +32,54 @@
 
 
 
+## 创建用户
+
+1. 获取管理地址。
+
+    点击列表“详情”按钮，打开抽屉，获取管理地址。默认提供内网地址，如需外网访问，可参考[外网访问](/maxirai/introduction/access.md)。
+
+    ![](/images/1740136704893-3.png)
+
+2. 使用超级管理员账号登录。
+
+    > 用户名默认为 `Administrator`，密码为创建实例时设置的密码。如遗忘密码，可返回 Ucloud 控制台进行密码重置。
+
+    ![](maxirai/images/login.jpg)
+
+3. 选择“账号管理” > “添加用户”，完成账号创建。
+
+    ![](maxirai/images/create-account.jpg)
+
+    更多信息，请参考[创建账号](/maxirai/admin-guide/account-mgmt.md#创建账号)。
+
 ## 开始问答
-1.登录问答平台
 
-如果您登录的是管理员账号，可点击右上角“切换工作空间”，选择对应项目，进入问答界面，即可开始问答。
+1. 获取问答入口地址。
 
-![](/images/1740136704893-6.png)
+    点击列表“详情”按钮，打开抽屉，获取问答入口地址。默认提供内网地址，如需外网访问，可参考[外网访问](/maxirai/introduction/access)。
 
+    ![](辛苦补充图片)
 
+2. 使用[上一步](#创建用户)中创建的用户账号登录问答系统。
 
-如果您登录的是普通用户账号，需要从管理员处获取用户名、密码、登录地址，登录问答平台。
+    ![](maxirai/images/user-login.jpg)
 
-> 前置条件：管理员需要完成以下操作
->
-> + 创建用户，设置用户名、密码，并分配对应权限和席位，可参考 [管理员指南](admin-guide/1-overview.md) 。
-> + 提供详情页问答地址，如需外网访问，可参考 [外网访问](/maxirai/introduction/access.md) 。
->
+3. 点击“添加 Agent”，完成 Agent 创建。
 
-![](/images/1740136704893-7.png)
+    ![](maxirai/images/create-agent.jpg)
 
-![](/images/1740136704893-8.png)
+    更多信息，请参考[创建 Agent](/maxirai/user-guide/agent-mgmt.md#创建-agent)。
 
-2.上传数据集
+    > 如需创建带知识库/数据集的 Agent, 请参考[快速入门](/maxirai/user-guide/quick-start.md)完成 Agent 创建。
 
-![](/images/1740136704893-9.png)
+4. 开始问答。
 
-![](/images/1740136704893-10.png)
+    点击 Agent 名称右侧的新增按钮，打开一个新会话，即可开始问答。   
 
+    ![](maxirai/images/new-session.jpg)
 
 
-恭喜您可以开始问答啦！系统将根据您的提问快速返回答案，并**提供思考过程和数据来源**。通过持续学习优化，确保每次回答都更精准。
+
 
 
 
