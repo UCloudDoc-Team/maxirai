@@ -9,20 +9,23 @@
    - [计费说明](/maxirai/buy/charge.md)
 - 快速上手
    - [购买实例](/maxirai/fast/purchase.md)
-- 操作指南
-   - [用户指南](/maxirai/guide/user.md)
-   - [管理员指南](/maxirai/guide/admin.md)
    - [外网访问](/maxirai/introduction/access.md)
-- API 文档
-   - [概述](/maxirai/API/introduction/overview)
-   - [身份认证](/maxirai/API/introduction/authentication)
-   - [流式传输](/maxirai/API/introduction/streaming)
-   - [错误码](/maxirai/API/introduction/error-codes)
-   - API 接口
-      - [数据集](/maxirai/API/api-reference/datasets)
-      - [数据源](/maxirai/API/api-reference/data-source)
-      - [本地文件](/maxirai/API/api-reference/file)
-      - [会话](/maxirai/API/api-reference/session)
-      - [任务](/maxirai/API/api-reference/job)
- 
-   
+- 用户指南
+   - [简介](/maxirai/user-guide/1-overview.md)
+   - [开始之前](/maxirai/user-guide/2-before-you-start.md)
+   - [快速入门](/maxirai/user-guide/3-quick-start.md)
+   - [模型配置](/maxirai/user-guide/4-llm-settings.md)
+   - [团队管理](/maxirai/user-guide/5-team-mgmt.md)
+   - [身份管理](/maxirai/user-guide/6-identity-mgmt.md)
+   - [数据源管理](/maxirai/user-guide/7-data-source-mgmt.md)
+   - [知识库管理](/maxirai/user-guide/8-kb-mgmt.md)
+   - [数据集管理](/maxirai/user-guide/9-dataset-mgmt.md)
+   - [Agent 管理](/maxirai/user-guide/10-agent-mgmt.md)
+- 管理员指南
+   - [简介](/maxirai/admin-guide/1-overview.md)
+   - [站点配置](/maxirai/admin-guide/2-site-settings.md)
+   - [模型管理](/maxirai/admin-guide/3-llm-settings.md)
+   - [账号管理](/maxirai/admin-guide/4-account-mgmt.md)
+   - [团队管理](/maxirai/admin-guide/5-team-mgmt.md)
+   - [服务管理](/maxirai/admin-guide/6-service-settings.md)
+   - [配置中心](/maxirai/admin-guide/7-config-center.md)
